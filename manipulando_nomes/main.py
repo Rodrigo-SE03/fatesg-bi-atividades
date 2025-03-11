@@ -1,9 +1,8 @@
 nome_completo = input("Digite seu nome completo\n")
-pos = 1
-for sub_nome in nome_completo.split():
-    print("--------------------")
-    print(sub_nome)
-    print("Posição no nome: ",pos)
-    print("Número de caracteres: ",len(sub_nome))
-    print("Nome invertido: ",sub_nome[::-1])
-    pos+=1
+
+for idx,sub_nome in enumerate(nome_completo.split()):
+    print("--------------------\n")
+    print(f"Nome {idx+1}: {sub_nome}")
+    print("-Número de caracteres: ",len(sub_nome))
+    print("-Posição: ",idx+1)
+    print("-Invertido: ",sub_nome[::-1])
